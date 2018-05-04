@@ -1,0 +1,106 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: #BD0D91;/* for the tint on top of apple devices*/
+    background-image:linear-gradient(to bottom, white 0% ,white 100%);/* for the body content*/
+
+}
+
+header {
+    background-color: #BD0D91;
+    color: white;
+    padding: 5%;
+    position: fixed;
+    width:90%;
+    top:0;
+}
+
+header img {
+    float: right;
+}
+
+h1 {
+    margin: 0;
+    font-size:1.2em;
+}
+
+h2 {
+    margin: 0;
+    color: #CCC;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+main {
+    background-color: #F0DAEA;
+    padding: 15px;
+    padding-top: 150px;
+}
+
+h3 {
+    margin-top: 0;
+    background-color: white;
+    padding: 5px;
+    border-bottom: 2px dashed darkred;
+    position:-webkit-sticky;/* safari only*/
+    position: sticky;
+    top:120px;
+    
+}
+h3::selection,p::selection,h4::selection{
+    background-color:orange;
+    color:blue;
+    
+}
+
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+.meal {
+    margin-top: 15px;
+}
+
+.meal h4 {
+    color: #BD0D91;
+    font-size: 1.3em;
+    margin: 5px 0;
+}
+
+.meal section {
+    display: flex;
+}
+
+.meal .description {
+    font-size: 0.9em;
+    color: #444;
+    margin: 0;
+    flex-grow: 1;
+}
+
+.meal .price {
+    width: 100px;
+    font-weight: bold;
+    font-size: 0.8em;
+    text-align: right;
+    vertical-align: middle;
+    margin: 0;
+}
+
+footer {
+    padding: 0 15px;
+    text-align: center;
+    font-size: small;
+}
+/* tapping change color and option popup*/
+a {
+    padding: 15px;
+    -webkit-tap-highlight-color: orange;
+    -webkit-touch-callout: none;
+}
+
+
+
