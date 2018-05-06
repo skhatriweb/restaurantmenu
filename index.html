@@ -11,6 +11,7 @@
 <link rel="stylesheet" href="styles.css">
 <!--for android icon-->
 <link rel="icon" sizes="192x192" href="icon.png">
+<script src="script.js" defer></script>
 
 
 
@@ -21,11 +22,19 @@
 </header>
 
 <main>
+    <!--inline javascript event listener-->
+    <section id="cart" onmouseover="this.style.opacity=0.7" onmouseout="this.style.opacity=1">       
+        <h4>Your Order<a id="lnkStartOver" href="#">Cancel</a></h4>
+        
+        <ul>          
+                
+        </ul>
+    </section>
     <h3>Soups and Salads</h3>
 
     <ul>
         <li>
-            <article class="meal">
+            <article class="meal" data-title="Dal Soup" data-price="INR 325">
                 <h4>Dal Soup</h4>
                 <section>
                     <p class="description">A Traditional Lentil Soup Delicately Spiced.</p>
@@ -34,7 +43,7 @@
             </article>
         </li>
         <li>
-            <article class="meal">
+            <article class="meal" data-title="Tomato Soup" data-price="INR 325">
                 <h4>Tomato Soup</h4>
                 <section>
                     <p class="description">A Delicately Spiced Tomato Soup With Cumin And Fresh Coriander.</p>
@@ -43,7 +52,7 @@
             </article>
         </li>
          <li>
-            <article class="meal">
+            <article class="meal" data-title="Green Mix Salad" data-price="INR 450">
                 <h4>Green Mix Salad</h4>
                 <section>
                     <p class="description">Lettuce, Tomato, And Cucumber.</p>
@@ -57,7 +66,7 @@
 
     <ul>
         <li>
-            <article class="meal">
+            <article class="meal" data-title="Chicken Tandoori" data-price="INR 110">
                 <h4>Chicken Tandoori</h4>
                 <section>
                     <p class="description">Chicken Marinated In Yogurt And Mild Spices Roasted In Our Clay Oven.</p>
@@ -66,7 +75,7 @@
             </article>
         </li>
         <li>
-            <article class="meal">
+            <article class="meal" data-title="Chicken Tikka Kabab" data-price="INR 109">
                 <h4>Chicken Tikka Kabab</h4>
                 <section>
                     <p class="description">Tender Juicy Cubes Of Chicken Breast (Boneless) Roasted In Our Clay Oven.</p>
@@ -75,7 +84,7 @@
             </article>
         </li>
         <li>
-            <article class="meal">
+            <article class="meal" data-title="Chicken Kabab" data-price = "INR 109">
                 <h4>Chicken Kabab</h4>
                 <section>
                     <p class="description">Minced Chicken With Onions And Herbs Roasted In Our Clay Oven.</p>
@@ -84,7 +93,7 @@
             </article>
         </li>
         <li>
-            <article class="meal">
+            <article class="meal" data-title="seekh Kabab" data-price="INR 109">
                 <h4>Seekh Kabab</h4>
                 <section>
                     <p class="description">Minced Lamb With Onions And Herbs Roasted In Our Clay Oven.</p>
@@ -93,7 +102,7 @@
             </article>
         </li>
         <li>
-            <article class="meal">
+            <article class="meal" data-title="Fish Tandoori" data-price="INR 140">
                 <h4>Fish Tandoori</h4>
                 <section>
                     <p class="description">Seasonal Fish Marinated With Herbs And Spices, Grilled In Our Clay Oven.</p>
@@ -102,7 +111,7 @@
             </article>
         </li>
         <li>
-            <article class="meal">
+            <article class="meal" data-title="Shrimp Tandoori" data-price="INR 150">
                 <h4>Shrimp Tandoori</h4>
                 <section>
                     <p class="description">Shrimp With Herbs And Spices. Grilled In Our Clay Oven.</p>
@@ -115,7 +124,7 @@
     <h3>Vegetarian</h3>
     <ul>
         <li>
-            <article class="meal">
+            <article class="meal" data-title="Chana Masala" data-price="INR 80">
                 <h4>Chana Masala</h4>
                 <section>
                     <p class="description">Garbanzo Beans Cooked In Indian Spices.</p>
@@ -124,7 +133,7 @@
             </article>
         </li>
         <li>
-            <article class="meal">
+            <article class="meal" data-title="Chana Saag" data-price="INR 90">
                 <h4>Chana Saag</h4>
                 <section>
                     <p class="description">Garbanzo Beans With Spinach Cooked In Indian Spices.</p>
@@ -133,7 +142,7 @@
             </article>
         </li>
         <li>
-            <article class="meal">
+            <article class="meal" data-title="Chana Aloo" data-price="INR 80">
                 <h4>Chana Aloo</h4>
                 <section>
                     <p class="description">Garbanzo Beans With Potatoes Cooked In Indian Spices.</p>
@@ -142,7 +151,7 @@
             </article>
         </li>
         <li>
-            <article class="meal">
+            <article class="meal" data-title="Aloo Saag" data-price="INR 80">
                 <h4>Aloo Saag</h4>
                 <section>
                     <p class="description">Potatoes With Spinach Cooked In Indian Spices.</p>
@@ -151,7 +160,7 @@
             </article>
         </li>
         <li>
-            <article class="meal">
+            <article class="meal" data-title="Aloo Gobi" data-price="INR 90">
                 <h4>Aloo Gobi</h4>
                 <section>
                     <p class="description">Fresh Cauliflower With Sautéed Potatoes. Stir Fried With Spices.</p>
@@ -160,7 +169,7 @@
             </article>
         </li>
         <li>
-            <article class="meal">
+            <article class="meal" data-title="Aloo Mater" data-price="INR 90">
                 <h4>Aloo Mater</h4>
                 <section>
                     <p class="description">Potatoes With Green Peas Cooked In Tomato Based Curry.</p>
@@ -173,16 +182,16 @@
     <h3>Bread</h3>
     <ul>
         <li>
-            <article class="meal">
+            <article class="meal" data-title="Roti" data-price="INR 15">
                 <h4>Roti</h4>
                 <section>
                     <p class="description">Plain Whole Wheat Bread Baked In Our Clay Oven.</p>
-                    <p class="price">1580 INR</p>
+                    <p class="price">15 INR</p>
                 </section>
             </article>
         </li>
         <li>
-            <article class="meal">
+            <article class="meal" data-title="Poori" data-price="INR 15">
                 <h4>Poori</h4>
                 <section>
                     <p class="description">Deep Fried Whole Wheat Bread.</p>
@@ -191,7 +200,7 @@
             </article>
         </li>
         <li>
-            <article class="meal">
+            <article class="meal" data-title="Naan" data-price="INR 15">
                 <h4>Naan</h4>
                 <section>
                     <p class="description">Traditional White Flour Bread Baked In Our Clay Oven.</p>
@@ -200,7 +209,7 @@
             </article>
         </li>
         <li>
-            <article class="meal">
+            <article class="meal" data-title="Garlic Naan" data-price="INR 22">
                 <h4>Garlic Naan</h4>
                 <section>
                     <p class="description">Tandoori Naan Topped Off With Seasonal Garlic.</p>

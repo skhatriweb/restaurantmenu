@@ -102,5 +102,34 @@ a {
     -webkit-touch-callout: none;
 }
 
+#cart{
+    background-color:#006;
+    border-top-left-radius:10px;
+    border-top-right-radius:10px;
+    position:fixed;
+    bottom:0;  
+    left:20%;
+    right:20%;
+    z-index:1000;
+    padding:15px;
+    color:#ddd;
+    font-size:0.8em;
+
+
+}
+#cart a{
+   color:yellow;
+}
+#cart h4{
+    text-align:center;
+    margin:0;
+    
+}
+#cart li{
+    margin:5px;
+    padding:5px;
+    
+}
+
 
 
